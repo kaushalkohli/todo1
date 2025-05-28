@@ -56,7 +56,13 @@
 .btn-add {
   background: #4CAF50;
   color: white;
+  transition: all 0.3s ease;
 }
+.btn-add:hover {
+  background:red;
+  transform: translateY(-2px);
+}
+
 
 .btn-delete {
   background: #f44336;
@@ -66,13 +72,6 @@
 .btn-done {
   background: #2196F3;
   color: white;
-}
-
-.btn-all-done {
-  background: #9C27B0;
-  color: white;
-  width: 100%;
-  margin-top: 1rem;
 }
 
 .todo-stats {
@@ -87,4 +86,42 @@
     margin-bottom: 20px;
     font-style: italic;
     font-size:20px
+}
+
+.btn-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.btn-row .btn {
+    min-width: 150px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-row .btn-all-done {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-row .btn-all-done:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.btn-row .btn-delete {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-row .btn-delete:hover {
+    background-color: #da190b;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }

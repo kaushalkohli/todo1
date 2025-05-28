@@ -105,9 +105,15 @@ function Todo() {
             <div className="todo-stats">
                 <p>Total: {stats.total} | Active: {stats.active} | Completed: {stats.completed}</p>
             </div>
-
-            <button className="btn btn-all-done" onClick={markAllDone}>Mark All as Done</button>
-            <button className="btn btn-delete" onClick={clearCompleted}>Clear Completed</button>
+            <div className='btn-row'>
+                <button className="btn btn-all-done" onClick={markAllDone}>
+                    <span>Mark All as Done</span>
+                </button>
+                <button className="btn btn-delete" onClick={clearCompleted}>
+                    <span>Clear Completed</span>
+                </button>
+            </div>
+            
         </div>
     )
 }
